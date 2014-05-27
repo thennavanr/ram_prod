@@ -2,56 +2,34 @@
 <html>
 <head>
   <title>Form</title>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+  <script>
+
+      $(document).ready(function() {
+        $(".page-link").on("click", function(e) {
+        $(".page").fadeOut(250);
+        setTimeout(function() { $($(e.currentTarget).attr("href")).fadeIn(250); }, 250);
+      });
+      });
+  </script>
   
  
 </head>
 <body>
-<style type="text/css">
-nav ul 
-{ 
-list-style-type:none; 
-margin:0; 
-padding:0; 
-} 
-nav li 
-{ 
-display:inline; 
-} 
-nav a:link,a:visited 
-{ 
-color:#FFFFFF; 
-background-color:#B4CDCD; 
-text-align:center; 
-padding:6px; 
-text-decoration:none; 
-} 
-nav a:hover,a:active 
-{ 
-background-color:#7A8B8B; 
-}
 
-element.style {
-visibility: visible;
-left: 192px;
-top: 155px;
-width: 940px;
-min-height: 33px;
-position: absolute;
-}
+
+<style type="text/css">
+
+
 
 body {
 font-size: 10px;
 font-family: Arial,Helvetica,sans-serif;
 }
 
-element.style {
-text-align: center;
-height: 33px;
-width: 940px;
-overflow: visible;
-white-space: nowrap;
-display: inherit;
-}
+
 
 .wysiwyg_common_components_dropdownmenu_viewer_skins_SolidColorMenuButtonSkinddm2-itemsContainer {
 background-color: transparent;
@@ -66,12 +44,7 @@ position: relative;
 }
 
 
-element.style {
-visibility: visible;
-position: relative;
--webkit-transition: 0.4s;
-transition: 0.4s;
-}
+
 
 .wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] {
 background-color: rgb(47, 46, 42);
@@ -83,10 +56,15 @@ transition: background-color 0.4s ease 0s;
 border-radius: 6px 0px 0px;
 }
 
+
+
 .wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
 display: inline-block;
 cursor: pointer;
 }
+
+
+
 
 .Style Attribute {
 text-align: center;
@@ -107,16 +85,13 @@ padding: 0px;
 }
 
 .wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
-display: inline-block;
 cursor: pointer;
-background-color: transparent;
 transition: background-color 0.4s ease 0s;
 -webkit-transition: background-color 0.4s ease 0s;
 }
 
-element.style {
-padding: 0px 56px;
-}
+
+
 
 .wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
 display: inline-block;
@@ -130,6 +105,12 @@ transition: color 0.4s ease 0s;
 -webkit-transition: color 0.4s ease 0s;
 }
 
+wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label {
+display: inline-block;
+padding: 0px 10px;
+font: normal normal normal 16px/1.4em 'eb garamond', serif;
+}
+
 p {
 -webkit-margin-before: 1em;
 -webkit-margin-after: 1em;
@@ -141,27 +122,85 @@ div {
 display: block;
 }
 
-element.style {
-visibility: visible;
-left: 425px;
-top: 9px;
-width: 145px;
-min-height: 40px;
-position: absolute;
-}
-
-element.style {
-visibility: visible;
-left: 372px;
-top: 26px;
-min-width: 240px;
-min-height: 129px;
-position: absolute;
-}
-
 .wysiwyg_viewer_skins_WRichTextNewSkintxtNew {
 word-wrap: break-word;
 }
+
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] {
+background-color: rgb(47, 46, 42);
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+display: inline-block;
+cursor: pointer;
+}
+
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper {
+padding: 0px;
+border-left: 1px solid rgb(47, 46, 42);
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+cursor: pointer;
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] .wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label {
+color: rgb(231, 215, 176);
+transition: color 0.4s ease 0s;
+-webkit-transition: color 0.4s ease 0s;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label {
+display: inline-block;
+padding: 0px 10px;
+font: normal normal normal 16px/1.4em 'eb garamond', serif;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+cursor: pointer;
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] {
+background-color: rgb(47, 46, 42);
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+display: inline-block;
+cursor: pointer;
+}
+
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper {
+padding: 0px;
+border-left: 1px solid rgb(47, 46, 42);
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+cursor: pointer;
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+display: inline-block;
+cursor: pointer;
+background-color: transparent;
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+
 
 
 
@@ -345,6 +384,22 @@ left: 0px;
 right: 0px;
 }
 
+#navigation {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    border-right: 1px solid black;
+}
+
+#pages {
+    margin-left: 270px; /* 250px + 20px of actual margin */
+}
+
+.page {
+    position: relative;
+    display: none;
+    overflow: scroll;
+}
 
 
 
@@ -352,7 +407,35 @@ right: 0px;
 
 </style>
 
+
+        <div id="content">
+            <div id="navigation">
+                <h1>Navigation</h1>
+                <ul>
+                    <li><a href="#page1" class="page-link">Page 1</a></li>
+                    <li><a href="#page2" class="page-link">Page 2</a></li>
+                </ul>
+            </div>
+            
+            <div id="pages">
+                <div id="page1" class="page">
+                    <h1>Page 1</h1>
+                    <p>This is all the lovely content on page 1.</p>
+                    <p>Let's add a bunch of stuff to make it scroll.</p>
+                    <p style="font-size: 72px">.<br/>.<br/>.<br/>.<br/>.<br/>.</p>
+                    <p>This is at the bottom of the page.</p>
+                </div>
+                
+                <div id="page2" class="page">
+                    <h1>Page 2</h1>
+                    <p>This is all the lovely content on page 2.</p>
+                </div>
+            </div>
+        </div>
+
+
 <div id="container" style="width:1349px";>
+
 
 <div id="header" style="background-color:rgb(239, 232, 213); box-shadow: rgba(0, 0, 0, 0.701961) 0px 0px 5px 0px;
 border-top: 7px solid rgb(47, 46, 42); border-bottom: 0px solid rgb(47, 46, 42); height: 188px; left: -185px";>
@@ -392,6 +475,7 @@ style="width: 980px; margin-left: 0px;">
 <p>
   &nbsp;</p>
 </div></div>
+
 
 
 <div id="DrpDwnMn0-115i" comp="wysiwyg.viewer.components.menus.DropDownMenu" dataquery="#MAIN_MENU" propertyquery="#DrpDwnMn0-115i" width="940" height="33" x="22" y="156" scale="1" angle="0" class="wysiwyg_common_components_dropdownmenu_viewer_skins_SolidColorMenuButtonSkinddm2" styleid="ddm2" skin="wysiwyg.common.components.dropdownmenu.viewer.skins.SolidColorMenuButtonSkin" style="visibility: visible; left: 192px; top: 155px; width: 940px; min-height: 33px; position: absolute;">
