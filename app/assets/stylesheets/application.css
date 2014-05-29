@@ -22,7 +22,7 @@ font-family: Arial,Helvetica,sans-serif;
 
 
 
-.wysiwyg_common_components_dropdownmenu_viewer_skins_SolidColorMenuButtonSkinddm2-itemsContainer {
+.dropdown-itemsContainer {
 background-color: transparent;
 border-radius: 6px 6px 0px 0px;
 border: 0px solid rgb(47, 46, 42);
@@ -385,3 +385,34 @@ right: 0px;
     display: none;
     overflow: scroll;
 }
+
+.ShadowBottomScreen-left {
+background-position: 0px -29px;
+width: 100px;
+left: 0px;
+}
+
+.ShadowBottomScreen-ln {
+bottom: -14px;
+height: 14px;
+background-image: url(http://static.parastorage.com/services/skins/2.858.8/images/wysiwyg/core/themes/base/shadowbottom.png);
+position: absolute;
+}
+
+.ShadowBottomScreen-center {
+background-position: 0px 0px;
+right: 100px;
+left: 100px;
+}
+
+.ShadowBottomScreen-right {
+background-position: 100% -29px;
+width: 100px;
+right: 0px;
+}
+
+.fixedPosition {
+position: fixed!important;
+z-index: 1!important;
+}
+
