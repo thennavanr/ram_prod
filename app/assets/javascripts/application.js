@@ -20,3 +20,5 @@ $(document).ready(function() {
         setTimeout(function() { $($(e.currentTarget).attr("href")).fadeIn(250); }, 250);
     });
 });
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

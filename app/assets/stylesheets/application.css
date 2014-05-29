@@ -13,25 +13,375 @@
  *= require_tree .
  *= require_self
  */
-ul 
-{ 
-list-style-type:none; 
-margin:0; 
-padding:0; 
-} 
-li 
-{ 
-display:inline; 
-} 
-a:link,a:visited 
-{ 
-color:#FFFFFF; 
-background-color:#B4CDCD; 
-text-align:center; 
-padding:6px; 
-text-decoration:none; 
-} 
-a:hover,a:active 
-{ 
-background-color:#7A8B8B; 
+
+
+body {
+font-size: 10px;
+font-family: Arial,Helvetica,sans-serif;
+}
+
+
+
+.wysiwyg_common_components_dropdownmenu_viewer_skins_SolidColorMenuButtonSkinddm2-itemsContainer {
+background-color: transparent;
+border-radius: 6px 6px 0px 0px;
+border: 0px solid rgb(47, 46, 42);
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+position: relative;
+}
+
+
+
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] {
+background-color: rgb(47, 46, 42);
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[listposition="left"] {
+border-radius: 6px 0px 0px;
+}
+
+
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+display: inline-block;
+cursor: pointer;
+}
+
+
+
+
+.Style Attribute {
+text-align: center;
+white-space: nowrap;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2:first-child .wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper {
+border: none;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper {
+padding: 0px;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+cursor: pointer;
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+
+
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+display: inline-block;
+cursor: pointer;
+
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] .wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label {
+color: rgb(231, 215, 176);
+transition: color 0.4s ease 0s;
+-webkit-transition: color 0.4s ease 0s;
+}
+
+wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label {
+display: inline-block;
+padding: 0px 10px;
+font: normal normal normal 16px/1.4em 'eb garamond', serif;
+}
+
+p {
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+div {
+display: block;
+}
+
+.wysiwyg_viewer_skins_WRichTextNewSkintxtNew {
+word-wrap: break-word;
+}
+
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] {
+background-color: rgb(47, 46, 42);
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+display: inline-block;
+cursor: pointer;
+}
+
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper {
+padding: 0px;
+border-left: 1px solid rgb(47, 46, 42);
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+cursor: pointer;
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] .wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label {
+color: rgb(231, 215, 176);
+transition: color 0.4s ease 0s;
+-webkit-transition: color 0.4s ease 0s;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label {
+display: inline-block;
+padding: 0px 10px;
+font: normal normal normal 16px/1.4em 'eb garamond', serif;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+cursor: pointer;
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] {
+background-color: rgb(47, 46, 42);
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+display: inline-block;
+cursor: pointer;
+}
+
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper {
+padding: 0px;
+border-left: 1px solid rgb(47, 46, 42);
+}
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+cursor: pointer;
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+
+.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
+display: inline-block;
+cursor: pointer;
+background-color: transparent;
+transition: background-color 0.4s ease 0s;
+-webkit-transition: background-color 0.4s ease 0s;
+}
+
+
+
+
+
+.font_5 {
+font-size: 0.9em;
+color: rgb(113, 112, 112);
+}
+
+h5 {
+display: block;
+-webkit-margin-before: 1.67em;
+-webkit-margin-after: 1.67em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+h5{
+
+}
+
+.wysiwyg_viewer_skins_WRichTextNewSkintxtNew h5 {
+margin: 0px;
+letter-spacing: normal;
+}
+
+.wysiwyg_viewer_skins_WRichTextNewSkintxtNew a {
+color: inherit;
+}
+
+a {
+cursor: pointer;
+text-decoration: none;
+}
+
+a:-webkit-any-link {
+
+}
+
+.Style Attribute {
+line-height: 0.9em;
+}
+
+.Style Attribute {
+text-align: center;
+}
+
+
+
+.color_2 {
+color: rgb(0, 0, 0);
+}
+
+.font_8 {
+font: normal normal normal 14px/1.4em 'eb garamond', serif;
+color: rgb(47, 46, 42);
+}
+
+.color_20 {
+color: rgb(47, 46, 42);
+}
+
+.wysiwyg_viewer_skins_WRichTextSkintxt1-richTextContainer {
+position: relative;
+width: 100%;
+height: 100%;
+word-wrap: break-word;
+}
+
+.alignCenter {
+text-align: center;
+}
+
+.font_0 {
+font: normal normal normal 33px/1.4em 'eb garamond', serif;
+color: rgb(47, 46, 42);
+}
+
+.Style Attribute {
+zoom: 1;
+}
+
+.ShadowControl_left {
+left: -20px;
+background-position: 0px 0px;
+}
+
+.ShadowControl{
+position: absolute;
+bottom: -26px;
+width: 165px;
+height: 26px;
+background: url(http://static.parastorage.com/services/skins/2.842.5/images/wysiwyg/core/themes/base/liftedshadow_medium.png) no-repeat;
+}
+
+.ShadowControl_right {
+right: -20px;
+background-position: 100% 0px;
+}
+
+
+
+.ShadowControl_bg {
+position: absolute;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+background-color: rgb(47, 46, 42);
+border-radius: 5px;
+border: 1px solid rgb(47, 46, 42);
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+}
+
+.ShadowControl_inlineContent {
+position: absolute;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+}
+
+.RichTextNew{
+word-wrap: break-word;
+}
+
+.RichTextNew h4 {
+margin: 0px;
+letter-spacing: normal;
+}
+
+.font_4 {
+font: normal;
+color: rgb(160, 117, 8);
+}
+
+.color_21 {
+color: rgb(231, 215, 176);
+}
+
+.wysiwyg_viewer_skins_PageGroupSkin {
+height: 100px;
+width: 100px;
+}
+
+.wysiwyg_viewer_skins_PageGroupSkin-inlineContent {
+position: absolute;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+}
+
+.wysiwyg_viewer_skins_page_TransparentPageSkinp1-bg {
+position: absolute;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+}
+
+.color_16 {
+color: rgb(239, 232, 213);
+}
+
+
+
+.wysiwyg_viewer_skins_page_TransparentPageSkinp1-inlineContent {
+position: absolute;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+}
+
+#navigation {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    border-right: 1px solid black;
+}
+
+#pages {
+    margin-left: 270px; /* 250px + 20px of actual margin */
+}
+
+.page {
+    position: relative;
+    display: none;
+    overflow: scroll;
 }
