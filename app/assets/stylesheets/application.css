@@ -1,275 +1,7 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
-
-
-h1 {
-  font-family: Helvetica;
-  font-weight: 100;
-}
-body {
-  color:#333;
-  text-align:center;
-  font-family: arial;
-}
-
-.nav {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-.nav li {
-  float: left;
-  width: 160px;
-  position: relative;
-}
-
-.nav li a {
-  background: #333;
-  color: #fff;
-  display: block;
-  padding: 7px 8px;
-  text-decoration: none;
-  border-top: 1px solid #069;
-}
-
-.nav li a:hover {
-  color: #069;
-}
-
-/*=== submenu ===*/
-
-.nav ul {
-  display: none;
-  position: absolute;
-  margin-left: 0px;
-  list-style: none;
-  padding: 0px;
-}
-
-.nav ul li {
-  width: 160px;
-  float: left;
-}
-
-.nav ul a {
-  display: block;
-  height: 15px;
-  padding: 7px 8px;
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 1px solid #222;
-}
-.nav ul li a:hover {
-  color: #069;
-}
-
-#navigation {
-  font-size: 15px;
-font-family: Arial,Helvetica,sans-serif;
-    position: fixed;
-    width: 250px;
-    height: 100%;
-    border-right: 1px solid black;
-}
-#pages {
-    margin-left: 270px; /* 250px + 20px of actual margin */
-}
-.page {
-    position: relative;
-    display: none;
-    overflow: scroll;
-}
 body {
 font-size: 10px;
 font-family: Arial,Helvetica,sans-serif;
 }
-.dropdown-itemsContainer {
-background-color: transparent;
-border-radius: 6px 6px 0px 0px;
-border: 0px solid rgb(47, 46, 42);
-border-image-source: initial;
-border-image-slice: initial;
-border-image-width: initial;
-border-image-outset: initial;
-border-image-repeat: initial;
-position: relative;
-}
-
-
-
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] {
-background-color: rgb(47, 46, 42);
-transition: background-color 0.4s ease 0s;
--webkit-transition: background-color 0.4s ease 0s;
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[listposition="left"] {
-border-radius: 6px 0px 0px;
-}
-
-
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
-display: inline-block;
-cursor: pointer;
-}
-
-
-
-
-.Style Attribute {
-text-align: center;
-white-space: nowrap;
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2:first-child .wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper {
-border: none;
-border-image-source: initial;
-border-image-slice: initial;
-border-image-width: initial;
-border-image-outset: initial;
-border-image-repeat: initial;
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper {
-padding: 0px;
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
-cursor: pointer;
-transition: background-color 0.4s ease 0s;
--webkit-transition: background-color 0.4s ease 0s;
-}
-
-
-
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
-display: inline-block;
-cursor: pointer;
-
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] .wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label {
-color: rgb(231, 215, 176);
-transition: color 0.4s ease 0s;
--webkit-transition: color 0.4s ease 0s;
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label {
-display: inline-block;
-padding: 0px 10px;
-font: normal normal normal 16px/1.4em 'eb garamond', serif;
-}
-
-p {
--webkit-margin-before: 1em;
--webkit-margin-after: 1em;
--webkit-margin-start: 0px;
--webkit-margin-end: 0px;
-}
-
-div {
-display: block;
-}
-
-.wysiwyg_viewer_skins_WRichTextNewSkintxtNew {
-word-wrap: break-word;
-}
-
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] {
-background-color: rgb(47, 46, 42);
-transition: background-color 0.4s ease 0s;
--webkit-transition: background-color 0.4s ease 0s;
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
-display: inline-block;
-cursor: pointer;
-}
-
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper {
-padding: 0px;
-border-left: 1px solid rgb(47, 46, 42);
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
-cursor: pointer;
-transition: background-color 0.4s ease 0s;
--webkit-transition: background-color 0.4s ease 0s;
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] .wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label {
-color: rgb(231, 215, 176);
-transition: color 0.4s ease 0s;
--webkit-transition: color 0.4s ease 0s;
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label {
-display: inline-block;
-padding: 0px 10px;
-font: normal normal normal 16px/1.4em 'eb garamond', serif;
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
-cursor: pointer;
-transition: background-color 0.4s ease 0s;
--webkit-transition: background-color 0.4s ease 0s;
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2[state="selected"] {
-background-color: rgb(47, 46, 42);
-transition: background-color 0.4s ease 0s;
--webkit-transition: background-color 0.4s ease 0s;
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
-display: inline-block;
-cursor: pointer;
-}
-
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper {
-padding: 0px;
-border-left: 1px solid rgb(47, 46, 42);
-}
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
-cursor: pointer;
-transition: background-color 0.4s ease 0s;
--webkit-transition: background-color 0.4s ease 0s;
-}
-
-
-.wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 {
-display: inline-block;
-cursor: pointer;
-background-color: transparent;
-transition: background-color 0.4s ease 0s;
--webkit-transition: background-color 0.4s ease 0s;
-}
-
-
-
-
 
 .font_5 {
 font-size: 0.9em;
@@ -283,37 +15,6 @@ display: block;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px;
 }
-h5{
-
-}
-
-.wysiwyg_viewer_skins_WRichTextNewSkintxtNew h5 {
-margin: 0px;
-letter-spacing: normal;
-}
-
-.wysiwyg_viewer_skins_WRichTextNewSkintxtNew a {
-color: inherit;
-}
-
-a {
-cursor: pointer;
-text-decoration: none;
-}
-
-a:-webkit-any-link {
-
-}
-
-.Style Attribute {
-line-height: 0.9em;
-}
-
-.Style Attribute {
-text-align: center;
-}
-
-
 
 .color_2 {
 color: rgb(0, 0, 0);
@@ -328,13 +29,6 @@ color: rgb(47, 46, 42);
 color: rgb(47, 46, 42);
 }
 
-.wysiwyg_viewer_skins_WRichTextSkintxt1-richTextContainer {
-position: relative;
-width: 100%;
-height: 100%;
-word-wrap: break-word;
-}
-
 .alignCenter {
 text-align: center;
 }
@@ -342,10 +36,6 @@ text-align: center;
 .font_0 {
 font: normal normal normal 33px/1.4em 'eb garamond', serif;
 color: rgb(47, 46, 42);
-}
-
-.Style Attribute {
-zoom: 1;
 }
 
 .ShadowControl_left {
@@ -365,8 +55,6 @@ background: url(http://static.parastorage.com/services/skins/2.842.5/images/wysi
 right: -20px;
 background-position: 100% 0px;
 }
-
-
 
 .ShadowControl_bg {
 position: absolute;
@@ -410,41 +98,9 @@ color: rgb(160, 117, 8);
 color: rgb(231, 215, 176);
 }
 
-.wysiwyg_viewer_skins_PageGroupSkin {
-height: 100px;
-width: 100px;
-}
-
-.wysiwyg_viewer_skins_PageGroupSkin-inlineContent {
-position: absolute;
-top: 0px;
-bottom: 0px;
-left: 0px;
-right: 0px;
-}
-
-.wysiwyg_viewer_skins_page_TransparentPageSkinp1-bg {
-position: absolute;
-top: 0px;
-bottom: 0px;
-left: 0px;
-right: 0px;
-}
-
 .color_16 {
 color: rgb(239, 232, 213);
 }
-
-
-
-.wysiwyg_viewer_skins_page_TransparentPageSkinp1-inlineContent {
-position: absolute;
-top: 0px;
-bottom: 0px;
-left: 0px;
-right: 0px;
-}
-
 
 .ShadowBottomScreen-left {
 background-position: 0px -29px;
@@ -492,4 +148,13 @@ padding: 7px 8px;
 text-decoration: none;
 border-top: 1px solid #069;   
 cursor: pointer!important  ;
+}
+
+.main_header{
+background-color:rgb(239, 232, 213); 
+box-shadow: rgba(0, 0, 0, 0.701961) 0px 0px 5px 0px; 
+border-top: 7px solid rgb(47, 46, 42); 
+border-bottom: 0px solid rgb(47, 46, 42); 
+height: 188px; 
+left: -185px
 }
