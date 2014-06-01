@@ -1,214 +1,220 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Form</title>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Form</title>
 
-<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-<%= javascript_include_tag "defalult", "data-turbolinks-track" => true %>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script>
-$(document).ready(function() {
-    $(".page-link").on("click", function(e) {
-        $(".page").fadeOut(250);
-        setTimeout(function() { $($(e.currentTarget).attr("href")).fadeIn(250); }, 250);
-    });
-});
-</script>
-</head>
-<body style device="desktop" preview="public">
-
-
-
-<!..Header..>
-  <div id="container" style="width:1349px";>
-  <div id="header" style="background-color:rgb(239, 232, 213); box-shadow: rgba(0, 0, 0, 0.701961) 0px 0px 5px 0px; border-top: 7px solid rgb(47, 46, 42); border-bottom: 0px solid rgb(47, 46, 42); height: 188px; left: -185px";>
-
-  <div id="SITE_STRUCTURE" class="SITE_STRUCTURE" style="visibility: visible; padding-bottom: 0px; width: 980px; min-height: 990px; margin-left: auto; margin-right: auto">
-  </div>
-
-<!..Logo..>
-<div id="logocontainer"  width="240" height="130" x="372" y="26" scale="1" angle="0" title="" style="visibility: visible; left: 550px; top: 26px; min-width: 240px; min-height: 129px; position: absolute;">
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   
-  <img id="image" alt="" src="http://static.wixstatic.com/media/41d000_884a2cfdd22eef3773ab41cd174e62eb.png_srz_p_240_129_75_22_0.50_1.20_0.00_png_srz" style="margin-top: 0px; margin-left: 0px; width: 240px; height: 129px;">
-  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+
+  <script>
+  $(document).ready(
+    /* This is the function that will get executed after the DOM is fully loaded */
+    function () {
+      /* Next part of code handles hovering effect and submenu appearing */
+      $('.nav li').hover(
+        function () { //appearing on hover
+          $('ul', this).fadeIn();
+        },
+        function () { //disappearing on hover
+          $('ul', this).fadeOut();
+        }
+      );
+    }
+  );
+
+  $(document).ready(function() {
+    $('#nav-div').click(function(e){    
+        
+    
+
+    });
+
+     
 
 
-<div id="Logotext" width="145" height="40" x="425" y="9" scale="1" angle="0" styleid="txt1" style="visibility: visible; left: 602px; top: 9px; width: 145px; min-height: 40px; position: absolute;">
+  </script>
+  </head>
+  <body style device="desktop" preview="public">
 
-<p class="alignCenter" style="">
-  <span class="font_0"><span class="color_20">LORENZI</span></span></p>
-<p>
-  &nbsp;</p>
+
+
+  <!..Header..>
+    <div id="container" style="width:1349px";>
+    <div id="header" style="background-color:rgb(239, 232, 213); box-shadow: rgba(0, 0, 0, 0.701961) 0px 0px 5px 0px; border-top: 7px solid rgb(47, 46, 42); border-bottom: 0px solid rgb(47, 46, 42); height: 188px; left: -185px";>
+
+    <div id="SITE_STRUCTURE" class="SITE_STRUCTURE" style="visibility: visible; padding-bottom: 0px; width: 980px; min-height: 990px; margin-left: auto; margin-right: auto">
+    </div>
+
+  <!..Logo..>
+  <div id="logocontainer"  width="240" height="130" x="372" y="26" scale="1" angle="0" title="" style="visibility: visible; left: 550px; top: 26px; min-width: 240px; min-height: 129px; position: absolute;">
+    
+    <img id="image" alt="" src="http://static.wixstatic.com/media/41d000_884a2cfdd22eef3773ab41cd174e62eb.png_srz_p_240_129_75_22_0.50_1.20_0.00_png_srz" style="margin-top: 0px; margin-left: 0px; width: 240px; height: 129px;">
+    </div>
+
+
+  <div id="Logotext" width="145" height="40" x="425" y="9" scale="1" angle="0" styleid="txt1" style="visibility: visible; left: 602px; top: 9px; width: 145px; min-height: 40px; position: absolute;">
+
+  <p class="alignCenter" style="">
+    <span class="font_0"><span class="color_20">LORENZI</span></span></p>
+  <p>
+    &nbsp;</p>
+  </div></div>
+
+
+
+  <div id="DropDownList" width="940" height="33" x="22" y="156" scale="1" angle="0" styleid="ddm2" style="visibility: visible; left: 185px; top: 170px; width: 940px; min-height: 33px; position: absolute;">
+
+  <div skinpart="itemsContainer" class="dropdown-itemsContainer" style="text-align: center; height: 33px; width: 940px; overflow: visible; white-space: nowrap; display: inherit;">
+
+  <div id="content">
+    <div class="navigation">
+      <div id = "nav-div">
+      <a id="home-but" href="" class="Home-click">Home</a>
+    </div>
+      <div id = "nav-div">
+        <a id="who-but" href="" class="who-link">Who We Are</a>
+        </div>
+      <div id = "nav-div">Our Sauces</div>
+      <div id = "nav-div">Recipes</div>
+      <div id = "nav-div">Contact</div>     
+    </div>
+
+    <div id="pages">
+                    
+
+     </div>
+
+        
+</div>
+
 </div></div>
 
 
 
-<div id="DrpDwnMn0-115i" width="940" height="33" x="22" y="156" scale="1" angle="0" class="wysiwyg_common_components_dropdownmenu_viewer_skins_SolidColorMenuButtonSkinddm2" styleid="ddm2" style="visibility: visible; left: 185px; top: 170px; width: 940px; min-height: 33px; position: absolute;">
-
-<div skinpart="itemsContainer" class="dropdown-itemsContainer" style="text-align: center; height: 33px; width: 940px; overflow: visible; white-space: nowrap; display: inherit;">
-
-  <div skinpart="repeaterButton" comp="core.components.MenuButton" dataquery="#mainPage" id="MnBttn1-hpm" styleid="ddm2" skin="wysiwyg.viewer.skins.dropmenubutton.SolidColorMenuButtonNSkin" class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 " style="visibility: visible; position: relative; -webkit-transition: 0.4s; transition: 0.4s;" container="menu" listposition="left" state="selected"><div class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper">
-    <div skinpart="bg" style="padding: 0px 56px;">
-    <p skinpart="label" class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label" style="line-height: 8px; width: auto;">Home</p></div></div></div>
-
-<div skinpart="repeaterButton" comp="core.components.MenuButton" dataquery="#c1alk" id="MnBttn2-qs4" styleid="ddm2" skin="wysiwyg.viewer.skins.dropmenubutton.SolidColorMenuButtonNSkin" class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 " style="visibility: visible; position: relative; -webkit-transition: 0.4s; transition: 0.4s;" container="menu" listposition="center" state=""><div class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper"><div skinpart="bg" style="padding: 0px 56px;"><p skinpart="label" class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label" style="line-height: 8px; width: auto;">Who&nbsp;We&nbsp;Are</p></div></div></div>
-
-
-<div skinpart="repeaterButton" comp="core.components.MenuButton" dataquery="#cvc5" id="MnBttn3-81u" styleid="ddm2" skin="wysiwyg.viewer.skins.dropmenubutton.SolidColorMenuButtonNSkin" class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 " style="visibility: visible; position: relative; -webkit-transition: 0.4s; transition: 0.4s;" container="menu" listposition="center" state=""><div class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper"><div skinpart="bg" style="padding: 0px 55px;"><p skinpart="label" class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label" style="line-height: 8px; width: auto;">Our&nbsp;Sauces</p></div></div></div>
-
-<div skinpart="repeaterButton" comp="core.components.MenuButton" dataquery="#c3zk" id="MnBttn4-dcb" styleid="ddm2" skin="wysiwyg.viewer.skins.dropmenubutton.SolidColorMenuButtonNSkin" class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 " style="visibility: visible; position: relative; -webkit-transition: 0.4s; transition: 0.4s;" container="menu" listposition="center" state=""><div class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper"><div skinpart="bg" style="padding: 0px 56px 0px 55px;"><p skinpart="label" class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label" style="line-height: 8px; width: auto;">Recipes</p></div></div></div>
-
-<div skinpart="repeaterButton" comp="core.components.MenuButton" dataquery="#c24vq" id="MnBttn5-p0d" styleid="ddm2" skin="wysiwyg.viewer.skins.dropmenubutton.SolidColorMenuButtonNSkin" class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 " style="visibility: visible; position: relative; -webkit-transition: 0.4s; transition: 0.4s;" container="menu" listposition="right" state=""><div class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper"><div skinpart="bg" style="padding: 0px 56px;"><p skinpart="label" class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label" style="line-height: 8px; width: auto;">Contact</p></div></div></div>
-
-<div skinpart="dropWrapper" class="wysiwyg_common_components_dropdownmenu_viewer_skins_SolidColorMenuButtonSkinddm2-dropWrapper" style="display: none; visibility: hidden; zoom: 1; opacity: 0; width: 197px; text-align: center; left: 384px; right: auto; bottom: auto; z-index: 99999;" drophposition="center" dropalign="center" dropmode="dropDown"><div skinpart="moreContainer" class="wysiwyg_common_components_dropdownmenu_viewer_skins_SolidColorMenuButtonSkinddm2-moreContainer"><div skinpart="repeaterButton" comp="core.components.MenuButton" dataquery="#cfvg" id="MnBttn6-3h" styleid="ddm2" skin="wysiwyg.viewer.skins.dropmenubutton.SolidColorMenuButtonNSkin" class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2 " state="" listposition="dropLonely" container="drop" style="visibility: inherit; position: relative;"><div class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-c-gapper"><div skinpart="bg" style="padding: 0px;"><p skinpart="label" class="wysiwyg_viewer_skins_dropmenubutton_SolidColorMenuButtonNSkinddm2-label" style="line-height: 8px;">Stockists</p></div></div></div></div></div>
-
-
-    </div></div>
-
-<!..menu..>
-<div id="content">
-<div id="navigation">
-<ul>
-<li><a href="#page1" class="page-link">Home</a> </li>
-<li><a href="#page2" class="page-link">Who&nbsp;We&nbsp;Are</a></li>
-<li><a href="#page3" class="page-link">Our&nbsp;Sauces</a></li>
-<li><a href="#page4" class="page-link">Recipes</a></li>
-<li><a href="#page5" class="page-link">Contact</a></li>
-</ul>
-</div>
-<div id="pages">
-                <div id="page1" class="page">
-                    <h1>Page 1</h1>
-                </div>
-                <div id="page2" class="page">
-                    <h1>Page 2</h1>
-                </div>
-                <div id="page3" class="page">
-                    <h1>Page 3</h1>
-                </div>
-                <div id="page4" class="page">
-                    <h1>Page 4</h1>
-                </div>
-                <div id="page5" class="page">
-                    <h1>Page 5</h1>
-                </div>
-</div>
-</div>
-
-
-<!..Logo content..>
-<div id="LogoContent" width="115" height="70" x="439" y="53" scale="1" angle="0" styleid="txtNew" style="visibility: visible; left: 610px; top: 52px; width: 115px; min-height: 70px; position: absolute;">
-  <h5 style="line-height: 0.9em; text-align: center;" class="font_5">
-  <span style="line-height:0.9em;">
-  <a href="#!Home/mainPage" target="_self">​</a>
-  <span class="color_2">Cucina Authentica</span>
-  </span>
-  </h5>
-  <p style="text-align: center; line-height: 1em;" class="font_8">
-    <span style="line-height:1em;">PASTA SAUCE</span>
-  </p>
-  <p style="text-align: center; line-height: 2.25em;" class="font_9">
-    <span style="line-height:2em;">since 1997</span>
-  </p>
-</div>
-
-
-<!..Main page container..>
-
-<div id="PAGES_CONTAINER" width="980" height="615" x="0" y="189" scale="1" angle="0" styleid="pc1" style="visibility: visible; width: 980px; min-height: 614px; top: 188px; position: absolute;">
-
-      
-  <div id="mainPage" width="980" height="604" x="0" y="0" scale="1" angle="0" styleid="p1" style="visibility: visible; min-height: 603px; position: absolute; top: 0px; left: 183px; width: 980px; zoom: 1; opacity: 1;">
-      
-
-  <div skinpart="bg" class="wysiwyg_viewer_skins_page_TransparentPageSkinp1-bg"></div>
-  <div skinpart="inlineContent" class="wysiwyg_viewer_skins_page_TransparentPageSkinp1-inlineContent">
-
-<!..controls 3..>
-<!..ctrl 0..>
-  <div id="Cntnr0" width="305" height="193" x="20" y="411" scale="1" angle="0" styleid="c4" state="desktopView" class="ShadowControl" style="visibility: visible; left: 20px; top: 411px; min-width: 305px; min-height: 192px; position: absolute;">
-        
-  <div class="ShadowControl ShadowControl_left"></div>
-  <div class="ShadowControl ShadowControl_right"></div>
-  <div skinpart="bg" class="ShadowControl_bg"></div>
-  <div skinpart="inlineContent" class="ShadowControl_inlineContent">
-
-  <div id="Controltext1" width="240" height="143" x="30" y="7" scale="1" angle="0" styleid="txtNew" class="RichTextNew" style="visibility: visible; left: 30px; top: 7px; width: 240px; min-height: 143px; position: absolute;">
-          <h4 style="line-height: 1.5em; text-align: center;" class="font_4">
-          <span style="line-height:1.5em;">
-          <span class="color_21">Who We Are</span></span></h4>
-          <p style="text-align: center; line-height: 1.5em;" class="font_8">
-          <span style="line-height:1.5em;">
-          <span class="color_16">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</span></span></p>
+   
+  <!..Logo content..>
+  <div id="LogoContent" width="115" height="70" x="439" y="53" scale="1" angle="0" styleid="txtNew" style="visibility: visible; left: 610px; top: 52px; width: 115px; min-height: 70px; position: absolute;">
+    <h5 style="line-height: 0.9em; text-align: center;" class="font_5">
+    <span style="line-height:0.9em;">
+    <a href="#!Home/mainPage" target="_self">​</a>
+    <span class="color_2">Cucina Authentica</span>
+    </span>
+    </h5>
+    <p style="text-align: center; line-height: 1em;" class="font_8">
+      <span style="line-height:1em;">PASTA SAUCE</span>
+    </p>
+    <p style="text-align: center; line-height: 2.25em;" class="font_9">
+      <span style="line-height:2em;">since 1997</span>
+    </p>
   </div>
-    <div id="Submitbutton1" width="130" height="30" x="87" y="153" scale="1" angle="0" styleid="b2" tabindex="0" style="visibility: visible; left: 87px; top: 152px; width: 130px; min-height: 30px; position: absolute;"><a skinpart="link" href="#!who_we_are/c1alk" target="_self" style="text-align: center; cursor: pointer;">
-  <span skinpart="label" style="line-height: 30px;">Read More &gt;</span></a>
-</div></div></div>
 
-<!..ctrl 1..>
-    <div id="Cntnr1" width="305" height="193" x="337" y="411" scale="1" angle="0" styleid="c4" state="desktopView" class="ShadowControl" style="visibility: visible; left: 337px; top: 411px; min-width: 305px; min-height: 192px; position: absolute;">
+
+  <!..Main page container..>
+
+  <div id="PAGES_CONTAINER" width="980" height="615" x="0" y="189" scale="1" angle="0" styleid="pc1" style="visibility: visible; width: 980px; min-height: 614px; top: 188px; position: absolute;">
+
+        
+    <div id="mainPage" width="980" height="604" x="0" y="0" scale="1" angle="0" styleid="p1" style="visibility: visible; min-height: 603px; position: absolute; top: 0px; left: 183px; width: 980px; zoom: 1; opacity: 1;">
+        
+
+    <div skinpart="bg" class="wysiwyg_viewer_skins_page_TransparentPageSkinp1-bg"></div>
+    <div skinpart="inlineContent" class="wysiwyg_viewer_skins_page_TransparentPageSkinp1-inlineContent">
+
+  <!..controls 3..>
+  <!..ctrl 0..>
+    <div id="Cntnr0" width="305" height="193" x="20" y="411" scale="1" angle="0" styleid="c4" state="desktopView" class="ShadowControl" style="visibility: visible; left: 20px; top: 411px; min-width: 305px; min-height: 192px; position: absolute;">
+          
+    <div class="ShadowControl ShadowControl_left"></div>
+    <div class="ShadowControl ShadowControl_right"></div>
+    <div skinpart="bg" class="ShadowControl_bg"></div>
+    <div skinpart="inlineContent" class="ShadowControl_inlineContent">
+
+    <div id="Controltext1" width="240" height="143" x="30" y="7" scale="1" angle="0" styleid="txtNew" class="RichTextNew" style="visibility: visible; left: 30px; top: 7px; width: 240px; min-height: 143px; position: absolute;">
+            <h4 style="line-height: 1.5em; text-align: center;" class="font_4">
+            <span style="line-height:1.5em;">
+            <span class="color_21">Who We Are</span></span></h4>
+            <p style="text-align: center; line-height: 1.5em;" class="font_8">
+            <span style="line-height:1.5em;">
+            <span class="color_16">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</span></span></p>
+    </div>
+      <div id="Submitbutton1" width="130" height="30" x="87" y="153" scale="1" angle="0" styleid="b2" tabindex="0" style="visibility: visible; left: 87px; top: 152px; width: 130px; min-height: 30px; position: absolute;"><a skinpart="link" href="#!who_we_are/c1alk" target="_self" style="text-align: center; cursor: pointer;">
+    <span skinpart="label" style="line-height: 30px;">Read More &gt;</span></a>
+  </div></div></div>
+
+  <!..ctrl 1..>
+      <div id="Cntnr1" width="305" height="193" x="337" y="411" scale="1" angle="0" styleid="c4" state="desktopView" class="ShadowControl" style="visibility: visible; left: 337px; top: 411px; min-width: 305px; min-height: 192px; position: absolute;">
+
+        <div class="ShadowControl ShadowControl_left"></div>
+        <div class="ShadowControl ShadowControl_right"></div>
+        <div skinpart="bg" class="ShadowControl_bg"></div>
+        <div skinpart="inlineContent" class="ShadowControl_inlineContent">
+
+        <div id="ControlText2" width="240" height="143" x="34" y="7" scale="1" angle="0" styleid="txtNew" class="RichTextNew" style="visibility: visible; left: 34px; top: 7px; width: 240px; min-height: 143px; position: absolute;"><h4 style="line-height: 1.5em; text-align: center;" class="font_4">
+        <span style="line-height:1.5em;"><span class="color_21">Our Sauces</span></span></h4>
+        <p style="text-align: center; line-height: 1.5em;" class="font_8"><span style="line-height:1.5em;">
+          <span class="color_16">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</span></span></p>
+
+      </div><div id="SubmitButton2" width="130" height="30" x="89" y="152" scale="1" angle="0" styleid="b2"  tabindex="0" style="visibility: visible; left: 89px; top: 151px; width: 130px; min-height: 30px; position: absolute;">
+      <a skinpart="link" href="#!our_sauces/cvc5" target="_self" style="text-align: center; cursor: pointer;">
+        <span skinpart="label" style="line-height: 30px;">Read More &gt;</span></a>
+      </div></div></div>
+
+  <!..ctrl 2..>
+    <div id="Cntnr2" width="305" height="193" x="653" y="411" scale="1" angle="0" styleid="c4" state="desktopView" class="ShadowControl" style="visibility: visible; left: 653px; top: 411px; min-width: 305px; min-height: 192px; position: absolute;">
 
       <div class="ShadowControl ShadowControl_left"></div>
       <div class="ShadowControl ShadowControl_right"></div>
       <div skinpart="bg" class="ShadowControl_bg"></div>
       <div skinpart="inlineContent" class="ShadowControl_inlineContent">
 
-      <div id="ControlText2" width="240" height="143" x="34" y="7" scale="1" angle="0" styleid="txtNew" class="RichTextNew" style="visibility: visible; left: 34px; top: 7px; width: 240px; min-height: 143px; position: absolute;"><h4 style="line-height: 1.5em; text-align: center;" class="font_4">
-      <span style="line-height:1.5em;"><span class="color_21">Our Sauces</span></span></h4>
-      <p style="text-align: center; line-height: 1.5em;" class="font_8"><span style="line-height:1.5em;">
-        <span class="color_16">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</span></span></p>
+        <div id="ContentText3" width="240" height="143" x="34" y="8" scale="1" angle="0" styleid="txtNew" class="RichTextNew" style="visibility: visible; left: 34px; top: 8px; width: 240px; min-height: 143px; position: absolute;"><h4 style="line-height: 1.5em; text-align: center;" class="font_4"><span style="line-height:1.5em;">
+          <span class="color_21">Recipes</span></span></h4>
+          <p style="text-align: center; line-height: 1.5em;" class="font_8"><span style="line-height:1.5em;"><span class="color_16">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</span></span></p></div>
 
-    </div><div id="SubmitButton2" width="130" height="30" x="89" y="152" scale="1" angle="0" styleid="b2"  tabindex="0" style="visibility: visible; left: 89px; top: 151px; width: 130px; min-height: 30px; position: absolute;">
-    <a skinpart="link" href="#!our_sauces/cvc5" target="_self" style="text-align: center; cursor: pointer;">
-      <span skinpart="label" style="line-height: 30px;">Read More &gt;</span></a>
-    </div></div></div>
+        <div id="SubmitButton2" width="130" height="30" x="87" y="154" scale="1" angle="0" styleid="b2" tabindex="0" style="visibility: visible; left: 87px; top: 153px; width: 130px; min-height: 30px; position: absolute;"><a skinpart="link" href="#!recipes/c3zk" target="_self" style="text-align: center; cursor: pointer;">
+          <span skinpart="label" style="line-height: 30px;">Read More &gt;</span></a>
+        </div></div></div>
 
-<!..ctrl 2..>
-  <div id="Cntnr2" width="305" height="193" x="653" y="411" scale="1" angle="0" styleid="c4" state="desktopView" class="ShadowControl" style="visibility: visible; left: 653px; top: 411px; min-width: 305px; min-height: 192px; position: absolute;">
-
-    <div class="ShadowControl ShadowControl_left"></div>
-    <div class="ShadowControl ShadowControl_right"></div>
-    <div skinpart="bg" class="ShadowControl_bg"></div>
-    <div skinpart="inlineContent" class="ShadowControl_inlineContent">
-
-      <div id="ContentText3" width="240" height="143" x="34" y="8" scale="1" angle="0" styleid="txtNew" class="RichTextNew" style="visibility: visible; left: 34px; top: 8px; width: 240px; min-height: 143px; position: absolute;"><h4 style="line-height: 1.5em; text-align: center;" class="font_4"><span style="line-height:1.5em;">
-        <span class="color_21">Recipes</span></span></h4>
-        <p style="text-align: center; line-height: 1.5em;" class="font_8"><span style="line-height:1.5em;"><span class="color_16">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</span></span></p></div>
-
-      <div id="SubmitButton2" width="130" height="30" x="87" y="154" scale="1" angle="0" styleid="b2" tabindex="0" style="visibility: visible; left: 87px; top: 153px; width: 130px; min-height: 30px; position: absolute;"><a skinpart="link" href="#!recipes/c3zk" target="_self" style="text-align: center; cursor: pointer;">
-        <span skinpart="label" style="line-height: 30px;">Read More &gt;</span></a>
-      </div></div></div>
-
-<!..image..>
-
-<div id="ImageContainer" width="960" height="415" x="11" y="24" scale="1" angle="0" styleid="wp2" state="noTouch" title="" style="visibility: visible; left: 11px; top: 24px; min-width: 960px; min-height: 415px; position: absolute;">
-
-  <img skinpart="image" alt="" src="http://static.wixstatic.com/media/41d000_71ed70cbd53f0e9bd17e625d82df8ab1.png_srz_p_960_415_75_22_0.50_1.20_0.00_png_srz" style="margin-top: 0px; margin-left: 0px; width: 960px; height: 415px;"></div></a>
-</div></div></div>
-
-
-<!..footer..>
-  <div id="SITE_FOOTER" width="980" height="175" x="0" y="817" scale="1" angle="0" class="wysiwyg_viewer_skins_screenwidthcontainer_TransparentScreenfc1" styleid="fc1" style="visibility: visible; position: absolute; bottom: auto; width: 980px; min-height: 175px; top: 815px;">
-
-  <div skinpart="screenWidthBackground" class="wysiwyg_viewer_skins_screenwidthcontainer_TransparentScreenfc1-screenWidthBackground" style="position: absolute; width: 1349px; height: 175px; left: -185px;"></div>
-
-  <div skinpart="centeredContent" class="wysiwyg_viewer_skins_screenwidthcontainer_TransparentScreenfc1-centeredContent" style="width: 980px; margin-left: 0px;"><div skinpart="bg" class="wysiwyg_viewer_skins_screenwidthcontainer_TransparentScreenfc1-bg"></div>
-
-<!.site header..> 
-<!..shadow under header..>
-
-<div id="SITE_HEADER" width="980" height="189" x="0" y="0" scale="1" angle="0" pos="fixed" class="fixedPosition ShadowBottomScreen-In" styleid="hc3" skin="ShadowBottomScreen-In" style="visibility: visible; position: fixed; width: 980px; min-height: 188px; left:185px; top:15px">
-<div class="ShadowBottomScreen-ln ShadowBottomScreen-left"></div>
-<div class="ShadowBottomScreen-ln ShadowBottomScreen-center"></div>
-<div class="ShadowBottomScreen-ln ShadowBottomScreen-right"></div>
-</div>
+  <!..image..>
 
 
 
-      
+                    
 
-<%= yield %>  
+    
+  <div id="ImageContainer" class = "mainPageClass" width="960" height="415" x="11" y="24" scale="1" angle="0" styleid="wp2" state="noTouch" title="" style="visibility: visible; left: 11px; top: 24px; min-width: 960px; min-height: 415px; position: absolute;">
 
-</body>
-</html>
+    <img skinpart="image" alt="" src="http://static.wixstatic.com/media/41d000_71ed70cbd53f0e9bd17e625d82df8ab1.png_srz_p_960_415_75_22_0.50_1.20_0.00_png_srz" style="margin-top: 0px; margin-left: 0px; width: 960px; height: 415px;"></div></a>
+  </div></div></div>
+
+ <div id="whoWeAre" class="whoClass" style="">testing</div>
+
+
+  <!..footer..>
+    <div id="SITE_FOOTER" width="980" height="175" x="0" y="817" scale="1" angle="0" class="wysiwyg_viewer_skins_screenwidthcontainer_TransparentScreenfc1" styleid="fc1" style="visibility: visible; position: absolute; bottom: auto; width: 980px; min-height: 175px; top: 815px;">
+
+    <div skinpart="screenWidthBackground" class="wysiwyg_viewer_skins_screenwidthcontainer_TransparentScreenfc1-screenWidthBackground" style="position: absolute; width: 1349px; height: 175px; left: -185px;"></div>
+
+    <div skinpart="centeredContent" class="wysiwyg_viewer_skins_screenwidthcontainer_TransparentScreenfc1-centeredContent" style="width: 980px; margin-left: 0px;"><div skinpart="bg" class="wysiwyg_viewer_skins_screenwidthcontainer_TransparentScreenfc1-bg"></div>
+
+  <!.site header..> 
+  <!..shadow under header..>
+
+  <div id="SITE_HEADER" width="980" height="189" x="0" y="0" scale="1" angle="0"  class=" ShadowBottomScreen-In" styleid="hc3" skin="ShadowBottomScreen-In" style="visibility: visible; width: 980px; min-height: 188px; left:185px; top:15px">
+  <div class="ShadowBottomScreen-ln ShadowBottomScreen-left"></div>
+  <div class="ShadowBottomScreen-ln ShadowBottomScreen-center"></div>
+  <div class="ShadowBottomScreen-ln ShadowBottomScreen-right"></div>
+  </div>
+
+
+
+        
+
+  <%= yield %>  
+
+  </body>
+  </html>
