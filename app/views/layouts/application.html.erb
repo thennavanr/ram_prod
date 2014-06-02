@@ -9,14 +9,15 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
   <script>
   $(document).ready(function() {
-$('a').click(function(){
-   $('section').fadeOut(400);
-   var id = $(this).attr('class');
-   $(id).fadeIn(400);
-});
+    $('.navigation').click(function() {
+    $('.mainPageClass').show();
+    $('.whoWeAre').hide();
+  });
+
 
 });
    </script>
@@ -26,17 +27,17 @@ $('a').click(function(){
     <div id="container" style="width:1349px";>
     <div id="header" class="main_header">
 
-    <div id="SITE_STRUCTURE" class="SITE_STRUCTURE" style="visibility: visible; padding-bottom: 0px; width: 980px; min-height: 990px; margin-left: auto; margin-right: auto">
+    <div id="SITE_STRUCTURE" class="SITE_STRUCTURE">
     </div>
 
   <!..Logo..>
-  <div id="logocontainer"  width="240" height="130" x="372" y="26" scale="1" angle="0" title="" style="visibility: visible; left: 550px; top: 26px; min-width: 240px; min-height: 129px; position: absolute;">
+  <div id="logocontainer" Class="logo_container" width="240" height="130" x="372" y="26" scale="1" angle="0" title="">
     
-    <img id="image" alt="" src="http://static.wixstatic.com/media/41d000_884a2cfdd22eef3773ab41cd174e62eb.png_srz_p_240_129_75_22_0.50_1.20_0.00_png_srz" style="margin-top: 0px; margin-left: 0px; width: 240px; height: 129px;">
+    <img id="image" alt="" src="http://static.wixstatic.com/media/41d000_884a2cfdd22eef3773ab41cd174e62eb.png_srz_p_240_129_75_22_0.50_1.20_0.00_png_srz" class="logo_image">
     </div>
 
 
-  <div id="Logotext" width="145" height="40" x="425" y="9" scale="1" angle="0" styleid="txt1" style="visibility: visible; left: 602px; top: 9px; width: 145px; min-height: 40px; position: absolute;">
+  <div id="Logotext" width="145" height="40" x="425" y="9" scale="1" angle="0" styleid="txt1" class="logo_text">
 
   <p class="alignCenter" style="">
     <span class="font_0"><span class="color_20">LORENZI</span></span></p>
@@ -45,15 +46,16 @@ $('a').click(function(){
   </div></div>
 
 
-
-  <div id="DropDownList" width="940" height="33" x="22" y="156" scale="1" angle="0" styleid="ddm2" style="visibility: visible; left: 185px; top: 170px; width: 940px; min-height: 33px; position: absolute;">
+<div id="DropDownList" width="940" height="33" x="22" y="156" scale="1" angle="0" styleid="ddm2" style="visibility: visible; left: 185px; top: 170px; width: 940px; min-height: 33px; position: absolute;">
 
   <div skinpart="itemsContainer" class="dropdown-itemsContainer" style="text-align: center; height: 33px; width: 940px; overflow: visible; white-space: nowrap; display: inherit;">
+  
 
   <div id="content">
     <div class="navigation">
       <div id = "nav-div">
-      <a id="home-but" href="" class="Home-click">Home</a>
+      <a id="home-but" href="" class="home-link">Home</a>
+      
     </div>
       <div id = "nav-div">
         <a id="who-but" href="" class="who-link">Who We Are</a>
@@ -62,8 +64,6 @@ $('a').click(function(){
       <div id = "nav-div">Recipes</div>
       <div id = "nav-div">Contact</div>     
     </div>
-<section id="Home" ></section>
-<section id="Who We Are" ></section>
     <div id="pages">
                     
 
@@ -78,7 +78,7 @@ $('a').click(function(){
 
    
   <!..Logo content..>
-  <div id="LogoContent" width="115" height="70" x="439" y="53" scale="1" angle="0" styleid="txtNew" style="visibility: visible; left: 610px; top: 52px; width: 115px; min-height: 70px; position: absolute;">
+  <div id="LogoContent" width="115" height="70" x="439" y="53" scale="1" angle="0" styleid="txtNew" class="logo_content">
     <h5 style="line-height: 0.9em; text-align: center;" class="font_5">
     <span style="line-height:0.9em;">
     <a href="#!Home/mainPage" target="_self">​</a>
@@ -96,10 +96,10 @@ $('a').click(function(){
 
   <!..Main page container..>
 
-  <div id="PAGES_CONTAINER" width="980" height="615" x="0" y="189" scale="1" angle="0" styleid="pc1" style="visibility: visible; width: 980px; min-height: 614px; top: 188px; position: absolute;">
+  <div id="PAGES_CONTAINER" width="980" height="615" x="0" y="189" scale="1" angle="0" styleid="pc1" class="page_container">
 
         
-    <div id="mainPage" width="980" height="604" x="0" y="0" scale="1" angle="0" styleid="p1" style="visibility: visible; min-height: 603px; position: absolute; top: 0px; left: 183px; width: 980px; zoom: 1; opacity: 1;">
+    <div id="mainPage" width="980" height="604" x="0" y="0" scale="1" angle="0" styleid="p1" class="main_page">
         
 
     <div skinpart="bg" class="wysiwyg_viewer_skins_page_TransparentPageSkinp1-bg"></div>
@@ -107,14 +107,14 @@ $('a').click(function(){
 
   <!..controls 3..>
   <!..ctrl 0..>
-    <div id="Cntnr0" width="305" height="193" x="20" y="411" scale="1" angle="0" styleid="c4" state="desktopView" class="ShadowControl" style="visibility: visible; left: 20px; top: 411px; min-width: 305px; min-height: 192px; position: absolute;">
+    <div id="Cntnr0" width="305" height="193" x="20" y="411" scale="1" angle="0" styleid="c4" state="desktopView" class="ShadowControl">
           
     <div class="ShadowControl ShadowControl_left"></div>
     <div class="ShadowControl ShadowControl_right"></div>
     <div skinpart="bg" class="ShadowControl_bg"></div>
     <div skinpart="inlineContent" class="ShadowControl_inlineContent">
 
-    <div id="Controltext1" width="240" height="143" x="30" y="7" scale="1" angle="0" styleid="txtNew" class="RichTextNew" style="visibility: visible; left: 30px; top: 7px; width: 240px; min-height: 143px; position: absolute;">
+    <div id="Controltext1" width="240" height="143" x="30" y="7" scale="1" angle="0" styleid="txtNew" class="RichTextNew">
             <h4 style="line-height: 1.5em; text-align: center;" class="font_4">
             <span style="line-height:1.5em;">
             <span class="color_21">Who We Are</span></span></h4>
@@ -122,7 +122,8 @@ $('a').click(function(){
             <span style="line-height:1.5em;">
             <span class="color_16">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</span></span></p>
     </div>
-      <div id="Submitbutton1" width="130" height="30" x="87" y="153" scale="1" angle="0" styleid="b2" tabindex="0" style="visibility: visible; left: 87px; top: 152px; width: 130px; min-height: 30px; position: absolute;"><a skinpart="link" href="#!who_we_are/c1alk" target="_self" style="text-align: center; cursor: pointer;">
+    <div id="Submitbutton1" width="130" height="30" x="87" y="153" scale="1" angle="0" styleid="b2" tabindex="0" class="submit_but01">
+    <a skinpart="link" href="#!who_we_are/c1alk" target="_self" style="text-align: center; cursor: pointer;">
     <span skinpart="label" style="line-height: 30px;">Read More &gt;</span></a>
   </div></div></div>
 
@@ -134,12 +135,13 @@ $('a').click(function(){
         <div skinpart="bg" class="ShadowControl_bg"></div>
         <div skinpart="inlineContent" class="ShadowControl_inlineContent">
 
-        <div id="ControlText2" width="240" height="143" x="34" y="7" scale="1" angle="0" styleid="txtNew" class="RichTextNew" style="visibility: visible; left: 34px; top: 7px; width: 240px; min-height: 143px; position: absolute;"><h4 style="line-height: 1.5em; text-align: center;" class="font_4">
+      <div id="ControlText2" width="240" height="143" x="34" y="7" scale="1" angle="0" styleid="txtNew" class="RichTextNew">
+          <h4 style="line-height: 1.5em; text-align: center;" class="font_4">
         <span style="line-height:1.5em;"><span class="color_21">Our Sauces</span></span></h4>
         <p style="text-align: center; line-height: 1.5em;" class="font_8"><span style="line-height:1.5em;">
           <span class="color_16">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</span></span></p>
 
-      </div><div id="SubmitButton2" width="130" height="30" x="89" y="152" scale="1" angle="0" styleid="b2"  tabindex="0" style="visibility: visible; left: 89px; top: 151px; width: 130px; min-height: 30px; position: absolute;">
+      </div><div id="SubmitButton2" width="130" height="30" x="89" y="152" scale="1" angle="0" styleid="b2"  tabindex="0" class="submit_but02">
       <a skinpart="link" href="#!our_sauces/cvc5" target="_self" style="text-align: center; cursor: pointer;">
         <span skinpart="label" style="line-height: 30px;">Read More &gt;</span></a>
       </div></div></div>
@@ -152,35 +154,35 @@ $('a').click(function(){
       <div skinpart="bg" class="ShadowControl_bg"></div>
       <div skinpart="inlineContent" class="ShadowControl_inlineContent">
 
-        <div id="ContentText3" width="240" height="143" x="34" y="8" scale="1" angle="0" styleid="txtNew" class="RichTextNew" style="visibility: visible; left: 34px; top: 8px; width: 240px; min-height: 143px; position: absolute;"><h4 style="line-height: 1.5em; text-align: center;" class="font_4"><span style="line-height:1.5em;">
+      <div id="ContentText3" width="240" height="143" x="34" y="8" scale="1" angle="0" styleid="txtNew" class="RichTextNew" >
+          <h4 style="line-height: 1.5em; text-align: center;" class="font_4"><span style="line-height:1.5em;">
           <span class="color_21">Recipes</span></span></h4>
-          <p style="text-align: center; line-height: 1.5em;" class="font_8"><span style="line-height:1.5em;"><span class="color_16">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</span></span></p></div>
+          <p style="text-align: center; line-height: 1.5em;" class="font_8"><span style="line-height:1.5em;">
+            <span class="color_16">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</span></span></p></div>
 
-        <div id="SubmitButton2" width="130" height="30" x="87" y="154" scale="1" angle="0" styleid="b2" tabindex="0" style="visibility: visible; left: 87px; top: 153px; width: 130px; min-height: 30px; position: absolute;"><a skinpart="link" href="#!recipes/c3zk" target="_self" style="text-align: center; cursor: pointer;">
+        <div id="SubmitButton2" width="130" height="30" x="87" y="154" scale="1" angle="0" styleid="b2" tabindex="0" class="submit_but03" style=""><a skinpart="link" href="#!recipes/c3zk" target="_self" style="text-align: center; cursor: pointer;">
           <span skinpart="label" style="line-height: 30px;">Read More &gt;</span></a>
         </div></div></div>
 
   <!..image..>
 
-
-
-                    
-
     
   <div id="ImageContainer" class = "mainPageClass" width="960" height="415" x="11" y="24" scale="1" angle="0" styleid="wp2" state="noTouch" title="" style="visibility: visible; left: 11px; top: 24px; min-width: 960px; min-height: 415px; position: absolute;">
 
-    <img skinpart="image" alt="" src="http://static.wixstatic.com/media/41d000_71ed70cbd53f0e9bd17e625d82df8ab1.png_srz_p_960_415_75_22_0.50_1.20_0.00_png_srz" style="margin-top: 0px; margin-left: 0px; width: 960px; height: 415px;"></div></a>
+    <img skinpart="image" alt="" src="http://static.wixstatic.com/media/41d000_71ed70cbd53f0e9bd17e625d82df8ab1.png_srz_p_960_415_75_22_0.50_1.20_0.00_png_srz" style="margin-top: 0px; margin-left: 0px; width: 960px; height: 415px;">
+  </div></a>
   </div></div></div>
 
  <div id="whoWeAre" class="whoClass" style="">testing</div>
 
 
   <!..footer..>
-    <div id="SITE_FOOTER" width="980" height="175" x="0" y="817" scale="1" angle="0" class="wysiwyg_viewer_skins_screenwidthcontainer_TransparentScreenfc1" styleid="fc1" style="visibility: visible; position: absolute; bottom: auto; width: 980px; min-height: 175px; top: 815px;">
+    <div id="SITE_FOOTER" width="980" height="175" x="0" y="817" scale="1" angle="0" class="footer" styleid="fc1">
 
-    <div skinpart="screenWidthBackground" class="wysiwyg_viewer_skins_screenwidthcontainer_TransparentScreenfc1-screenWidthBackground" style="position: absolute; width: 1349px; height: 175px; left: -185px;"></div>
+    <div skinpart="screenWidthBackground" class="footer_screenWidthBackground" style="position: absolute; width: 1349px; height: 175px; left: -185px;"></div>
 
-    <div skinpart="centeredContent" class="wysiwyg_viewer_skins_screenwidthcontainer_TransparentScreenfc1-centeredContent" style="width: 980px; margin-left: 0px;"><div skinpart="bg" class="wysiwyg_viewer_skins_screenwidthcontainer_TransparentScreenfc1-bg"></div>
+    <div skinpart="centeredContent" class="footer_centeredContent" style="width: 980px; margin-left: 0px;">
+      <div skinpart="bg" class="footer_TransparentScreen"></div>
 
   <!.site header..> 
   <!..shadow under header..>

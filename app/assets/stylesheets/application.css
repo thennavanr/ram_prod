@@ -49,6 +49,12 @@ bottom: -26px;
 width: 165px;
 height: 26px;
 background: url(http://static.parastorage.com/services/skins/2.842.5/images/wysiwyg/core/themes/base/liftedshadow_medium.png) no-repeat;
+visibility: visible;
+left: 20px; 
+top: 411px; 
+min-width: 305px; 
+min-height: 192px; 
+position: absolute;
 }
 
 .ShadowControl_right {
@@ -82,6 +88,12 @@ right: 0px;
 
 .RichTextNew{
 word-wrap: break-word;
+visibility: visible; 
+left: 30px; 
+top: 7px; 
+width: 240px; 
+min-height: 143px; 
+position: absolute;
 }
 
 .RichTextNew h4 {
@@ -132,6 +144,33 @@ position: fixed!important;
 z-index: 1!important;
 }
 
+.submit_but01{
+visibility: visible; 
+left: 87px;
+top: 152px;
+width: 130px; 
+min-height: 30px;
+position: absolute;
+}
+
+.submit_but02{
+visibility: visible; 
+left: 89px; 
+top: 151px; 
+width: 130px; 
+min-height: 30px; 
+position: absolute;
+}
+
+.submit_but03{
+visibility: visible; 
+left: 87px; 
+top: 153px;
+width: 130px;
+min-height: 30px; 
+position: absolute;
+}
+
 #nav-div{
   margin: 0px;
 padding: 0px;
@@ -157,4 +196,71 @@ border-top: 7px solid rgb(47, 46, 42);
 border-bottom: 0px solid rgb(47, 46, 42); 
 height: 188px; 
 left: -185px
+}
+
+.SITE_STRUCTURE
+{
+visibility: visible;
+padding-bottom: 0px;
+width: 980px;
+min-height: 990px; 
+margin-left: auto; 
+margin-right: auto
+}
+
+.logo_container
+{
+visibility: visible; 
+left: 550px; 
+top: 26px; 
+min-width: 240px; 
+min-height: 129px; 
+position: absolute;
+}
+
+.logo_image
+{
+margin-top: 0px; 
+margin-left: 0px; 
+width: 240px; 
+height: 129px;
+}
+
+.logo_text
+{
+visibility: visible; 
+left: 602px; top: 9px; 
+width: 145px; 
+min-height: 40px; 
+position: absolute;
+}
+
+.logo_content
+{
+visibility: visible; 
+left: 610px; 
+top: 52px; 
+width: 115px; 
+min-height: 70px; 
+position: absolute;
+}
+
+.page_container
+{
+visibility: visible; 
+width: 980px; 
+min-height: 614px; 
+top: 188px;
+position: absolute;
+}
+
+.main_page
+{
+visibility: visible; 
+min-height: 603px; 
+position: absolute; 
+top: 0px; 
+left: 183px; 
+width: 980px; 
+zoom: 1; opacity: 1;
 }
