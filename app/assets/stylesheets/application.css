@@ -49,12 +49,6 @@ bottom: -26px;
 width: 165px;
 height: 26px;
 background: url(http://static.parastorage.com/services/skins/2.842.5/images/wysiwyg/core/themes/base/liftedshadow_medium.png) no-repeat;
-visibility: visible;
-left: 20px; 
-top: 411px; 
-min-width: 305px; 
-min-height: 192px; 
-position: absolute;
 }
 
 .ShadowControl_right {
@@ -263,4 +257,43 @@ top: 0px;
 left: 183px; 
 width: 980px; 
 zoom: 1; opacity: 1;
+}
+
+.footer_text
+{
+word-wrap: break-word;
+}
+
+.font_9 {
+font: normal normal normal 12px/1.4em 'eb garamond', serif;
+color: rgb(47, 46, 42);
+}
+
+.footer_centeredContent {
+position: absolute;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+}
+
+.footer_TransparentScreen_bg {
+position: absolute;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+}
+
+.footer_inlineContent {
+position: absolute;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+}
+
+.site_footer
+{
+
 }
