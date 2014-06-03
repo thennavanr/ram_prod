@@ -369,6 +369,14 @@ font: normal normal normal 14px/1.4em 'eb garamond', serif;
 color: rgb(47, 46, 42);
 }
 
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
 .who_nametext{
 position: relative;
 width: 100%;
@@ -380,8 +388,41 @@ word-wrap: break-word;
 text-align: center;
 }
 
-
-
 .color_20 {
 color: rgb(47, 46, 42);
+}
+
+.shadow_underline {
+background-image: url(http://static.parastorage.com/services/skins/2.882.3/images/wysiwyg/core/themes/base/fadenotchlinenew.png);
+background-position: 0px 0px;
+background-repeat: repeat-x;
+margin: 0px 30px;
+height: 30px;
+}
+
+.shadow_underline::before {
+background-image: url(http://static.parastorage.com/services/skins/2.882.3/images/wysiwyg/core/themes/base/fadenotchlinenew.png);
+background-position: 100% -30px;
+width: 30px;
+height: 30px;
+right: 0px;
+position: absolute;
+top: 0px;
+content: '';
+}
+
+.shadow_underline::after {
+background-image: url(http://static.parastorage.com/services/skins/2.882.3/images/wysiwyg/core/themes/base/fadenotchlinenew.png);
+background-position: 0px -30px;
+width: 30px;
+height: 30px;
+left: 0px;
+position: absolute;
+top: 0px;
+content: '';
+}
+
+.sauces_LiftedShadowPhoto_link{
+display: block;
+overflow: hidden;
 }
