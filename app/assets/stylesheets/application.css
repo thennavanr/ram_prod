@@ -1,10 +1,15 @@
+*= require googlefonts
+*= require_tree 
+
 body {
 font-size: 10px;
 font-family: Arial,Helvetica,sans-serif;
 }
 
+
+
 .font_5 {
-font-size: 0.9em;
+font: normal normal normal 23px/1.4em 'mr de haviland', cursive;
 color: rgb(113, 112, 112);
 }
 
@@ -166,7 +171,7 @@ position: absolute;
 }
 
 #nav-div{
-  margin: 0px;
+margin: 0px;
 padding: 0px;
 list-style: none;
 float: left;
@@ -174,13 +179,63 @@ width: 160px;
 position: relative;
 display: list-item;
 text-align: -webkit-match-parent;
-background: #333;
-color: #fff;
+background-color: initial;
+color: rgb(160, 117, 8);
 display: block;
 padding: 7px 8px;
-text-decoration: none;
-border-top: 1px solid #069;   
-cursor: pointer!important  ;
+text-decoration: none;  
+cursor: pointer!important;
+border-radius: 6px 0px 0px;
+display: inline-block;
+cursor:pointer;
+padding: 0px 10px;
+font: normal normal normal 16px/1.4em 'eb garamond', serif;
+height: 33px;
+width: 160px;
+
+}
+
+#nav-div #home-nav:hover,#nav-div #home-nav:active {
+background-color: rgb(47, 46, 42);
+height:33px;
+text-align: center;
+}
+
+#nav-div #who-nav:hover,#nav-div #who-nav:active {
+background-color: rgb(47, 46, 42);
+height:33px;
+}
+
+#nav-div #sauces-nav:hover,#nav-div #sauces-nav:active {
+background-color: rgb(47, 46, 42);
+height:33px;
+}
+
+#nav-div #recipes-nav:hover,#nav-div #recipes-nav:active {
+background-color: rgb(47, 46, 42);
+height:33px;
+}
+
+#nav-div #contact-nav:hover,#nav-div #contact-nav:active {
+background-color: rgb(47, 46, 42);
+height:33px;
+}
+
+#solid_line{
+padding: 0px;
+border-left: 1px solid rgb(47, 46, 42);
+}
+
+.dropdown-itemsContainer{
+background-color: transparent;
+border-radius: 6px 6px 0px 0px;
+border: 0px solid rgb(47, 46, 42);
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+position: relative;
 }
 
 .main_header{
@@ -231,12 +286,13 @@ position: absolute;
 
 .logo_content
 {
-visibility: visible; 
-left: 610px; 
-top: 52px; 
-width: 115px; 
-min-height: 70px; 
-position: absolute;
+word-wrap: break-word;
+}
+
+.logo_content p {
+margin: 0px;
+letter-spacing: normal;
+margin-top:-34px;
 }
 
 .page_container
@@ -425,4 +481,18 @@ content: '';
 .sauces_LiftedShadowPhoto_link{
 display: block;
 overflow: hidden;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: local('EB Garamond'), local('EBGaramond'), url(http://themes.googleusercontent.com/static/fonts/ebgaramond/v5/kYZt1bJ8UsGAPRGnkXPeFYbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Mr De Haviland';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mr De Haviland Regular'), local('MrDeHaviland-Regular'), url(http://themes.googleusercontent.com/static/fonts/mrdehaviland/v3/fD8y4L6PJ4vqDk7z8Y8e24lF6A_zyQcEfQALPrK4qOA.woff) format('woff');
 }
