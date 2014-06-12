@@ -101,7 +101,7 @@ letter-spacing: normal;
 }
 
 .font_4 {
-font: normal;
+font: normal normal normal 41px/1.4em 'mr de haviland', cursive;
 color: rgb(160, 117, 8);
 }
 
@@ -111,6 +111,23 @@ color: rgb(231, 215, 176);
 
 .color_16 {
 color: rgb(239, 232, 213);
+}
+
+.read_link {
+position: absolute;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+}
+
+.read_label {
+cursor: pointer;
+font: normal normal normal 14px/1.4em 'eb garamond', serif;
+color: rgb(184, 159, 96);
+white-space: nowrap;
+transition: color 0.4s ease 0s;
+-webkit-transition: color 0.4s ease 0s;
 }
 
 .ShadowBottomScreen-left {
@@ -247,6 +264,7 @@ height: 188px;
 left: -185px
 }
 
+
 .SITE_STRUCTURE
 {
 visibility: visible;
@@ -269,7 +287,7 @@ position: absolute;
 
 .logo_image
 {
-margin-top: 0px; 
+margin-top: 15px; 
 margin-left: 0px; 
 width: 240px; 
 height: 129px;
@@ -399,6 +417,16 @@ box-shadow: rgb(0, 0, 0) 0px 0px 0px;
 word-wrap: break-word;
 }
 
+h2 {
+display: block;
+-webkit-margin-before: 0.83em;
+-webkit-margin-after: 0.83em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+
+
 .font_2
 {
 font: normal normal normal 33px/1.4em 'eb garamond', serif;
@@ -409,6 +437,14 @@ color: rgb(47, 46, 42);
 border-top: 3px solid rgb(47, 46, 42);
 border-bottom: 1px solid rgb(47, 46, 42);
 padding: 5px 0px 0px;
+margin-top:-25px;
+}
+
+.footer_DoubleLine {
+border-top: 3px solid rgb(47, 46, 42);
+border-bottom: 1px solid rgb(47, 46, 42);
+padding: 5px 0px 0px;
+margin-top:40px;
 }
 
 .font_7 {
@@ -420,6 +456,12 @@ color: rgb(47, 46, 42);
 margin: 0px;
 letter-spacing: normal;
 }
+
+.who_text h2 {
+margin: 0px;
+letter-spacing: normal;
+}
+
 .font_8 {
 font: normal normal normal 14px/1.4em 'eb garamond', serif;
 color: rgb(47, 46, 42);
