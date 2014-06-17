@@ -255,15 +255,25 @@ border-image-repeat: initial;
 position: relative;
 }
 
-.main_header{
+.header_bgcolor{
 background-color:rgb(239, 232, 213); 
 box-shadow: rgba(0, 0, 0, 0.701961) 0px 0px 5px 0px; 
 border-top: 7px solid rgb(47, 46, 42); 
 border-bottom: 0px solid rgb(47, 46, 42); 
 height: 188px; 
-left: -185px
+left: -10px;
 }
 
+.header_screenWidthBackground {
+right: 0px;
+top: 0px;
+bottom: 0px;
+}
+
+.fixedPosition {
+position: fixed!important;
+z-index: 1!important;
+}
 
 .SITE_STRUCTURE
 {
@@ -272,14 +282,14 @@ padding-bottom: 0px;
 width: 980px;
 min-height: 990px; 
 margin-left: auto; 
-margin-right: auto
+margin-right: auto;
 }
 
 .logo_container
 {
 visibility: visible; 
-left: 550px; 
-top: 26px; 
+left: 547px; 
+top: 13px; 
 min-width: 240px; 
 min-height: 129px; 
 position: absolute;
@@ -296,10 +306,12 @@ height: 129px;
 .logo_text
 {
 visibility: visible; 
-left: 602px; top: 9px; 
+left: 602px; 
+top: -6px; 
 width: 145px; 
 min-height: 40px; 
 position: absolute;
+text-align: center;
 }
 
 .logo_content

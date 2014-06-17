@@ -76,7 +76,11 @@ $(document).ready(function() {
 <body style device="desktop" preview="public">
 <!..Header..>
 <div id="container" style="width:1349px";>
-<div id="header" class="main_header">
+
+  <div id="header" class="fixedPosition" width="980" height="189" x="0" y="0" scale="1" angle="0" pos="fixed" style="visibility: visible; position: fixed; width: 980px; min-height: 188px; top:0px">
+    <div class="header_screenWidthBackground" style="position: absolute; width: 1349px; height: 188px; left: -10px;">
+      <div class="header_bgcolor"></div>
+    </div>
 
 <div id="SITE_STRUCTURE" class="SITE_STRUCTURE">
 </div>
@@ -99,7 +103,7 @@ $(document).ready(function() {
 
 
 <!..Menu..>
-<div id="DropDownList" width="940" height="33" x="22" y="156" scale="1" angle="0" styleid="ddm2" style="visibility: visible; left: 220px; top: 170px; width: 940px; min-height: 33px; position: absolute;">
+<div id="DropDownList" width="940" height="33" x="22" y="156" scale="1" angle="0" styleid="ddm2" style="visibility: visible; left: 229px; top: 163px; width: 940px; min-height: 33px; position: fixed; z-index:2">
   <div skinpart="itemsContainer" class="dropdown-itemsContainer" style="text-align: center; height: 33px; width: 940px; overflow: visible; white-space: nowrap; display: inherit;">
       <div id="content">
         <div id="navigation">
@@ -131,18 +135,18 @@ $(document).ready(function() {
 
 <!..Logo content..>
 
-<div id="LogoContent" width="115" height="70" x="620" y="28" scale="1" angle="0" styleid="txtNew" class="logo_content" style="visibility: visible; left: 620px; top: 28px; width: 115px; min-height: 70px; position: absolute;">
-<h5 style="line-height: 0.9em; text-align: center;" class="font_5">
+<div id="LogoContent" width="115" height="70" x="625" y="14" scale="1" angle="0" styleid="txtNew" class="logo_content" style="visibility: visible; left: 625px; top: 14px; width: 115px; min-height: 70px; position: absolute;">
+<h5 style="line-height: 0.9em; text-align: center; position:fixed; z-index:2" class="font_5">
 <span style="line-height:0.9em;">
 <a href="#!Home/mainPage" target="_self">​</a>
 <span class="color_2">Cucina Authentica</span>
 </span>
 </h5>
 <p style="text-align: center; line-height: 1em;" class="font_8">
-<span style="line-height:1em;">PASTA SAUCE</span>
+<span style="line-height:14.2em; position:fixed; z-index:1; left:636px;">PASTA SAUCE</span>
 </p>
 <p style="text-align: center; line-height: 8em;" class="font_9">
-<span style="line-height:2em;">since 1997</span>
+<span style="line-height:20em; position:fixed; z-index:1; left:658px;">since 1997</span>
 </p>
 </div>
 
