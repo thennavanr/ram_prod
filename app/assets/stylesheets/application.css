@@ -205,37 +205,63 @@ cursor: pointer!important;
 border-radius: 6px 0px 0px;
 display: inline-block;
 cursor:pointer;
-padding: 0px 10px;
+padding: 0px 0px;
 font: normal normal normal 16px/1.4em 'eb garamond', serif;
 height: 33px;
 width: 160px;
+transition: color 0.4s ease 0s;
+-webkit-transition: color 0.4s ease 0s;
+line-height:2em;
+}
+
+.gapper {
+padding: 0px;
+border-left: 1px solid rgb(47, 46, 42);
+}
+
+.home_lable[state="selected"] .home_lable
+{
+color: rgb(231, 215, 176);
+transition: color 0.4s ease 0s;
+-webkit-transition: color 0.4s ease 0s;
+}
+
+
+#nav-div .a:hover,#nav-div .a.active { 
+  background: rgb(47, 46, 42); 
+  height:33px;
 
 }
+
 
 #nav-div #home-nav:hover,#nav-div #home-nav:active {
 background-color: rgb(47, 46, 42);
 height:33px;
-text-align: center;
+width:auto;
 }
 
 #nav-div #who-nav:hover,#nav-div #who-nav:active {
 background-color: rgb(47, 46, 42);
 height:33px;
+width:auto;
 }
 
 #nav-div #sauces-nav:hover,#nav-div #sauces-nav:active {
 background-color: rgb(47, 46, 42);
 height:33px;
+width:auto;
 }
 
 #nav-div #recipes-nav:hover,#nav-div #recipes-nav:active {
 background-color: rgb(47, 46, 42);
 height:33px;
+width:auto;
 }
 
 #nav-div #contact-nav:hover,#nav-div #contact-nav:active {
 background-color: rgb(47, 46, 42);
 height:33px;
+width:auto;
 }
 
 #solid_line{

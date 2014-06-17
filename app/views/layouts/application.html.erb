@@ -8,6 +8,8 @@ href="//fonts.googleapis.com/css?family=EB+Garamond:n,b,i,bi|Mr+De+Haviland:n,b,
 
 <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+
 <script>
 
 $(document).ready(function() {
@@ -68,6 +70,13 @@ $(document).ready(function() {
 
 
 
+ $('#nav-div .a').click(function(){
+         $('#nav-div .a').removeClass('active');
+         $(this).addClass('active');
+    });
+    
+ 
+
 });
 
 </script>
@@ -103,25 +112,35 @@ $(document).ready(function() {
 
 
 <!..Menu..>
-<div id="DropDownList" width="940" height="33" x="22" y="156" scale="1" angle="0" styleid="ddm2" style="visibility: visible; left: 229px; top: 163px; width: 940px; min-height: 33px; position: fixed; z-index:2">
+<div id="DropDownList" width="940" height="33" x="22" y="156" scale="1" angle="0" styleid="ddm2" style="visibility: visible; left: 278px; top: 163px; width: 940px; min-height: 33px; position: fixed; z-index:2">
   <div skinpart="itemsContainer" class="dropdown-itemsContainer" style="text-align: center; height: 33px; width: 940px; overflow: visible; white-space: nowrap; display: inherit;">
       <div id="content">
         <div id="navigation">
 
           <div id = "nav-div">
-            <div id = "home-nav">Home</div>
+            
+            <div id = "home-nav" class="a">Home</div>
+          
           </div>
           <div id = "nav-div">
-            <div id = "who-nav">Who We Are</div>
+            <div class="gapper">
+            <div id = "who-nav" class="a">Who We Are</div>
+          </div>
           </div>
           <div id = "nav-div">
-            <div id = "sauces-nav">Our Sauces</div>
+            <div class="gapper">
+            <div id = "sauces-nav" class="a">Our Sauces</div>
+          </div>
           </div>
           <div id = "nav-div">
-            <div id = "recipes-nav">Recipes</div>
+            <div class="gapper">
+            <div id = "recipes-nav" class="a">Recipes</div>
+          </div>
           </div>
           <div id = "nav-div">
-            <div id = "contact-nav">Contact</div>
+            <div class="gapper">
+            <div id = "contact-nav" class="a">Contact</div>
+          </div>
           </div>
           
         </div>
