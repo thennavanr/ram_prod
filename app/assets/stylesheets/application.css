@@ -465,6 +465,14 @@ display: block;
 -webkit-margin-end: 0px;
 }
 
+h5 {
+display: block;
+-webkit-margin-before: -0.3em;
+-webkit-margin-after: 0em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
 
 
 .font_2
@@ -577,4 +585,44 @@ overflow: hidden;
   font-style: normal;
   font-weight: 400;
   src: local('Mr De Haviland Regular'), local('MrDeHaviland-Regular'), url(http://themes.googleusercontent.com/static/fonts/mrdehaviland/v3/fD8y4L6PJ4vqDk7z8Y8e24lF6A_zyQcEfQALPrK4qOA.woff) format('woff');
+}
+
+.wysiwyg_viewer_skins_contactform_BasicContactFormSkincf2[state~="left"] {
+direction: ltr;
+text-align: left;
+}
+
+.wysiwyg_viewer_skins_contactform_BasicContactFormSkincf2[state~="visible"] .wysiwyg_viewer_skins_contactform_BasicContactFormSkincf2-wrapper {
+visibility: visible;
+}
+
+.wysiwyg_viewer_skins_contactform_BasicContactFormSkincf2-wrapper {
+position: absolute;
+width: 100%;
+}
+
+.wysiwyg_viewer_skins_contactform_BasicContactFormSkincf2 input {
+border-radius: 5px;
+background-color: rgb(239, 232, 213);
+font: normal normal normal 14px/1.4em 'eb garamond', serif;
+color: rgb(32, 30, 30);
+padding: 5px;
+margin: 0px 0px 5px;
+border: 0px solid rgb(239, 232, 213);
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+width: 100%;
+-webkit-appearance: none;
+}
+
+input{
+
+box-sizing: border-box;
+}
+
+.hidden {
+display: none!important;
 }
