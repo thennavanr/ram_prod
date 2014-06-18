@@ -75,7 +75,12 @@ $(document).ready(function() {
          $(this).addClass('active');
     });
     
- 
+    $('#nav-div .a').click(function(){
+         $('.a active').removeClass('active');
+         $(this).addClass('active');
+         return false;
+    });
+    
 
 });
 
@@ -118,9 +123,8 @@ $(document).ready(function() {
         <div id="navigation">
 
           <div id = "nav-div">
-            
-            <div id = "home-nav" class="a">Home</div>
-          
+          <div id = "home-nav" class="a active" 
+          style="-moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px;">Home</div>
           </div>
           <div id = "nav-div">
             <div class="gapper">
@@ -139,7 +143,7 @@ $(document).ready(function() {
           </div>
           <div id = "nav-div">
             <div class="gapper">
-            <div id = "contact-nav" class="a">Contact</div>
+            <div id = "contact-nav" class="a" style="-moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px;">Contact</div>
           </div>
           </div>
           
