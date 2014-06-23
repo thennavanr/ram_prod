@@ -292,6 +292,22 @@ height: 188px;
 left: -10px;
 }
 
+
+.header{
+position: fixed;
+z-index: 1!important;
+top:0px;
+height:188px;
+width:1349px;
+background-color:rgb(239, 232, 213);
+box-shadow: rgba(0, 0, 0, 0.701961) 0px 0px 5px 0px; 
+border-top: 7px solid rgb(47, 46, 42); 
+border-bottom: 0px solid rgb(47, 46, 42);
+right: 0px;
+bottom: 0px;
+}
+
+
 .header_screenWidthBackground {
 right: 0px;
 top: 0px;
@@ -320,7 +336,9 @@ left: 547px;
 top: 13px; 
 min-width: 240px; 
 min-height: 129px; 
-position: absolute;
+position: fixed;
+z-index: 1;
+
 }
 
 .logo_image
@@ -338,7 +356,8 @@ left: 602px;
 top: -6px; 
 width: 145px; 
 min-height: 40px; 
-position: absolute;
+position: fixed;
+z-index:1;
 text-align: center;
 }
 
@@ -464,15 +483,6 @@ display: block;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px;
 }
-
-h5 {
-display: block;
--webkit-margin-before: -0.3em;
--webkit-margin-after: 0em;
--webkit-margin-start: 0px;
--webkit-margin-end: 0px;
-}
-
 
 
 .font_2
@@ -625,4 +635,54 @@ box-sizing: border-box;
 
 .hidden {
 display: none!important;
+}
+
+textarea {
+box-sizing: border-box;
+}
+textarea {
+-webkit-rtl-ordering: logical;
+-webkit-user-select: text;
+flex-direction: column;
+cursor: auto;
+white-space: pre-wrap;
+word-wrap: break-word;
+}
+textarea{
+font: -webkit-small-control;
+letter-spacing: normal;
+word-spacing: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: start;
+}
+
+textarea{
+-webkit-writing-mode: horizontal-tb;
+}
+
+.wysiwyg_viewer_skins_contactform_BasicContactFormSkincf2[state~="visible"] .wysiwyg_viewer_skins_contactform_BasicContactFormSkincf2-wrapper {
+visibility: visible;
+}
+.wysiwyg_viewer_skins_contactform_BasicContactFormSkincf2[state~="left"] {
+direction: ltr;
+text-align: left;
+}
+.wysiwyg_viewer_skins_contactform_BasicContactFormSkincf2[state~="left"] span {
+float: left;
+}
+.wysiwyg_viewer_skins_contactform_BasicContactFormSkincf2 span {
+max-width: 60%;
+color: rgb(32, 30, 30);
+font: normal 14px 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.wysiwyg_viewer_skins_contactform_BasicContactFormSkincf2[state~="visible"] .wysiwyg_viewer_skins_contactform_BasicContactFormSkincf2-wrapper {
+visibility: visible;
+}
+.wysiwyg_viewer_skins_contactform_BasicContactFormSkincf2[state~="left"] {
+direction: ltr;
+text-align: left;
 }
